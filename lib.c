@@ -3,6 +3,15 @@
 
 #define SIZE 256
 
+float doubleIt(float x) {
+  return x * 2;
+}
+
+void greet(char *name) {
+  printf("Hello, %s!\n", name);
+  printf("How are you %s?\n", name);
+}
+
 void hello(void) {
   printf("Hello, world! From C!\n");
 }
