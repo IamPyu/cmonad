@@ -9,13 +9,7 @@ main = do
   putStrLn "Hello, world! From Haskell!"
   c_hello
   d_hello
-
-  putStr "69 * 2: "
-  print (c_doubleIt 69)
+  rs_hello
 
   cstr <- newCString "Haskell"
   c_greet (cstr)
-
-  let h = c_myRead
-  str <- peekCString h
-  putStrLn ("You said: " ++ str)
